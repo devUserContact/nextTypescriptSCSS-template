@@ -1,0 +1,80 @@
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+
+@mixin sm {
+	@media (min-width: #{$screen-sm-min}) {
+		@content;
+	}
+}
+@mixin md {
+	@media (min-width: #{$screen-md-min}) {
+		@content;
+	}
+}	
+@mixin lg {
+	@media (min-width: #{$screen-lg-min}) {
+		@content;
+	}
+}	
+@mixin xl {
+	@media (min-width: #{$screen-xl-min}) {
+		@content;
+	}
+}
+
+.container {
+  padding: 0 0.25rem;
+}
+.main {
+  min-height: 100vh;
+  padding: 2rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 2.5rem;
+}
+.title,
+.description {
+  text-align: center;
+}
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+.grid {
+  display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+  justify-items: center;
+}
+.gridWrapper {
+	display: grid;
+}
+
+@include sm {
+}
+
+@include md {
+
+}
+
+@include lg {
+
+}
+
+@include xl {
+}
+
