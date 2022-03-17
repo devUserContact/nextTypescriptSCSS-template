@@ -1,4 +1,4 @@
-# Nextjs app template with typescript and scss
+# Nextjs app template with Typescript and SCSS
 ___
 run the development server:
 
